@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="uz">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FakeStore - Mahsulotlar (savatlarsiz)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="controls">
+                <input id="search" class="search" placeholder="Qidirish... (nom yoki kategoriya)" />
+                <select id="sort">
+                    <option value="default">Tartib: Default</option>
+                    <option value="price-asc">Narx: arzon → qimmat</option>
+                    <option value="price-desc">Narx: qimmat → arzon</option>
+                </select>
+            </div>
+        </header>
+
+        <main>
+            <div id="status" class="loading">Yuklanyapti...</div>
+            <div id="grid" class="grid" style="display:none"></div>
+            <div id="empty" class="empty" style="display:none">Hech nima topilmadi.</div>
+        </main>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
